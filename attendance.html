@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">🏫 Attendance Management</nav>
+
+  <div class="container">
+    <div class="main-content">
+      <h2>Attendance</h2>
+
+      <!-- Add Attendance Form -->
+      <div class="form-group">
+        <input type="number" id="studentId" placeholder="Student ID">
+        <input type="date" id="attendanceDate">
+        <select id="attendanceStatus">
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+        </select>
+        <button onclick="addAttendance()">Add Attendance</button>
+      </div>
+
+      <!-- Attendance Table -->
+      <table >
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Student ID</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceTable"></tbody>
+      </table>
+
+      <!-- Back Button -->
+      <button onclick="goToDashboard()" class="back-btn">⬅ Back to Dashboard</button>
+
+    </div>
+  </div>
+
+  <script src="attendance.js"></script>
+</body>
+</html>

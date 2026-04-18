@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exam Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">🏫 Exam Management</nav>
+
+  <div class="container">
+    <div class="main-content">
+      <h2>Exams</h2>
+
+      <!-- Add Exam Form -->
+      <div class="form-group">
+        <input type="number" id="examStudentId" placeholder="Student ID">
+        <input type="text" id="examSubject" placeholder="Subject">
+        <input type="number" id="examMarks" placeholder="Marks">
+        <button onclick="addExam()">Add Exam</button>
+      </div>
+
+      <!-- Exam Table -->
+      <table >
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Student ID</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="examTable"></tbody>
+      </table>
+
+      <!-- Back Button -->
+      <button onclick="goToDashboard()" class="back-btn">⬅ Back to Dashboard</button>
+
+    </div>
+  </div>
+
+  <script src="exams.js"></script>
+</body>
+</html>
